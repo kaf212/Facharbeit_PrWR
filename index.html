@@ -10,6 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+
     <title>Index</title>
     <style>
         #mainTitle {
@@ -22,6 +26,18 @@
         #headerBanner {
             background-image: url("https://api.i-web.ch/public/guest/getImageString/g45/b3c79b4e129a1d1860ca89dfb5961fba/1200/0/63ce6348b851a");
             background-size: cover;
+        }
+
+        .show-more-link {
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+        }
+
+        .show-more-link:hover {
+            opacity: 70%;
+            text-decoration: underline;
+
         }
 
 
@@ -47,6 +63,7 @@
                         facilis labore minima non, officia possimus praesentium repellat reprehenderit sapiente totam ut
                         voluptates.
                         Est, quam?</p>
+                    <a class="show-more-link"><em><strong>Mehr erfahren ...</strong></em></a>
                 </section>
             </div>
 
@@ -54,7 +71,8 @@
                  alt="" class="col-lg-5">
         </article>
         <article class="col-lg-12 my-5 d-flex justify-content-between">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bahnhof_Olten-20140514.jpg" alt="" class="col-lg-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bahnhof_Olten-20140514.jpg" alt=""
+                 class="col-lg-5">
             <div class="main-article col-lg-6 bg-light p-5">
                 <section>
                     <h2>Kompetitiver Saygex</h2>
@@ -69,13 +87,53 @@
                         facilis labore minima non, officia possimus praesentium repellat reprehenderit sapiente totam ut
                         voluptates.
                         Est, quam?</p>
+                    <a class="show-more-link"><em><strong>Mehr erfahren ...</strong></em></a>
                 </section>
-
             </div>
-
         </article>
 
     </div>
+    <div class="row-lg-12 bg-light d-flex justify-content-center">
+        <div class="row-lg-12">
+            <h1 class="mx-auto d-block">Ökonomische Auswirkungen</h1>
+        </div>
+        <div class="col-lg-6">
+            <p class="d-inline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur itaque iure libero
+                pariatur quos
+                repellendus sequi! Ab, architecto assumenda deleniti, doloremque eum fugiat iste minima nobis, placeat
+                reiciendis rem tempore.</p>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-between">
+            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+        </div>
+
+    </div>
 </main>
+
+
+<script> // Quelle: https://www.w3schools.com/js/js_graphics_chartjs.asp
+const xValues = ["Olten", "Frankreich", "Japan", "USA", "Argentinien"];
+const yValues = [53, 39, 33, 24, 15, 7];
+const barColors = ["red", "green", "blue", "orange", "brown"];
+
+new Chart("myChart", {
+    type: "bar",
+    data: {
+        labels: xValues,
+        datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+        }]
+    },
+    options: {
+        legend: {display: false},
+        title: {
+            display: true,
+            text: "Saygexproduktion global"
+        }
+    }
+});
+</script>
+
 </body>
 </html>
