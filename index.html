@@ -40,13 +40,68 @@
 
       }
 
+      #nav {
+          height: 80px;
+          width: 100%;
+          position: absolute;
+          z-index: 1;
+          background-color: lightyellow;
+          transition: all 0.3s;
+      }
 
+      #nav.scrolled {
+          height: 50px; /* Adjust the final height as needed */
+      }
+
+      .flex-spacer {
+          flex-grow: 1;
+      }
+      .nav-option {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+      }
+      .nav-option:hover {
+          background-color: rgba(255, 255, 255, 0.45);
+      }
+
+      .nav-option * {
+          cursor: pointer;
+      }
   </style>
 </head>
+<header>
+  <nav id='nav' style='position: fixed'>
+    <div id='navContent' class='container d-flex ' style='height: 100%'>
+
+      <div class='col-4 d-flex align-items-center' style='height: 100%'>
+        <span>Die Saygex Revolution im Norden von Olten</span>
+      </div>
+
+      <div class='flex-spacer'></div>
+
+      <div class='nav-option col-1'>
+        <span>Home</span>
+      </div>
+
+      <div class='nav-option col-1'>
+        <span>Kontakt</span>
+      </div>
+
+      <div class='nav-option col-1'>
+        <span>Über uns</span>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <div class="row justify-content-center align-items-center text-center bg-light " id="headerBanner">
+    <h1 id="mainTitle" class="">Die Saygex Revolution im Norden von Olten</h1>
+  </div>
+</header>
 <body>
-<div class="row justify-content-center align-items-center text-center bg-light " id="headerBanner">
-  <h1 id="mainTitle" class="">Die Saygex Revolution im Norden von Olten</h1>
-</div>
 
 <main class="container">
   <div class="row justify-content-evenly">
@@ -95,7 +150,7 @@
   </div>
   <div class="row-lg-12 bg-light d-flex flex-column justify-content-center">
 
-    <h1 class="mx-auto d-block">Ökonomische Auswirkungen</h1>
+    <h2 class="mx-auto d-block mt-3">Ökonomische Auswirkungen</h2>
     <div class='container d-flex pt-3'>
       <div class="col-lg-6">
         <p><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur itaque iure libero
@@ -115,6 +170,7 @@
 
 
 <script> // Quelle: https://www.w3schools.com/js/js_graphics_chartjs.asp
+// code for graph
 const xValues = ["Olten", "Frankreich", "Japan", "USA", "Argentinien"];
 const yValues = [53, 39, 33, 24, 15, 7];
 const barColors = ["red", "green", "blue", "orange", "brown"];
@@ -136,6 +192,19 @@ new Chart("myChart", {
         }
     }
 });
+</script>
+
+<script>
+    // code for navbar scroll animation
+    // Quelle: chat.openai.com (Code bearbeitet)
+    window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('nav');
+        if (window.scrollY > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
 </script>
 
 </body>
