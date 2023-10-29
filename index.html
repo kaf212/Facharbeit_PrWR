@@ -62,13 +62,21 @@
           align-items: center;
           justify-content: center;
           cursor: pointer;
+          padding: 0 1.5% 0 1.5%;
+          width: 10%;
+          transition: all 0.3s
       }
       .nav-option:hover {
-          background-color: rgba(255, 255, 255, 0.45);
+          background-color: rgba(255, 0 , 0 ,1);
       }
 
       .nav-option * {
           cursor: pointer;
+      }
+
+      .nav-option.scrolled {
+          padding: 0;
+          width: 7%;
       }
 
       #bannerButton {
@@ -97,15 +105,15 @@
 
       <div class='flex-spacer'></div>
 
-      <div class='nav-option col-1'>
+      <div class='nav-option'>
         <span>Home</span>
       </div>
 
-      <div class='nav-option col-1'>
+      <div class='nav-option'>
         <span>Kontakt</span>
       </div>
 
-      <div class='nav-option col-1'>
+      <div class='nav-option'>
         <span>Über uns</span>
       </div>
 
@@ -215,13 +223,21 @@ new Chart("myChart", {
 
 <script>
     // code for navbar scroll animation
-    // Quelle: chat.openai.com (Code bearbeitet)
-    window.addEventListener('scroll', function () {
+    window.addEventListener("scroll", function () {
         const navbar = document.getElementById('nav');
+        const navbarOptions = Array.from(document.getElementsByClassName("nav-option"))
+        console.log(navbarOptions)
         if (window.scrollY > 100) {
-            navbar.classList.add('scrolled');
+            navbar.classList.add("scrolled");
+            for (const opt of navbarOptions) {
+                opt.classList.add("scrolled")
+                console.log(opt)
+            }
         } else {
-            navbar.classList.remove('scrolled');
+            navbar.classList.remove("scrolled");
+            for (const opt of navbarOptions) {
+                opt.classList.remove("scrolled")
+            }
         }
     });
 </script>
