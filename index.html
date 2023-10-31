@@ -13,147 +13,17 @@
   <script
           src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
   </script>
-
+  <script src='index.js' defer></script>
+  <link rel='stylesheet' href='styles.css'>
   <title>Index</title>
-  <style>
-      @font-face {
-          font-family: 'TitleFont';
-          src: url('Agraham.otf') format('opentype');
-          font-weight: normal;
-          font-style: italic;
-      }
-
-      body {
-          background-color: wheat;
-      }
-
-      #mainTitle {
-          display: inline;
-          margin: 50px 0 0 0;
-          color: wheat;
-          opacity: 100%;
-      }
-
-      #headerBanner {
-          background-image: url("https://api.i-web.ch/public/guest/getImageString/g45/b3c79b4e129a1d1860ca89dfb5961fba/1200/0/63ce6348b851a");
-          background-size: cover;
-          height: 400px;
-      }
-
-      .show-more-link {
-          cursor: pointer;
-          color: black;
-          text-decoration: none;
-      }
-
-      .show-more-link:hover {
-          opacity: 70%;
-          text-decoration: underline;
-
-      }
-
-      #nav {
-          height: 80px;
-          width: 100%;
-          position: absolute;
-          z-index: 1;
-          background-color: lightyellow;
-          transition: all 0.3s;
-      }
-
-      #nav.scrolled {
-          height: 50px; /* Adjust the final height as needed */
-      }
-
-      .flex-spacer {
-          flex-grow: 1;
-      }
-      .nav-option {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          padding: 0 1.5% 0 1.5%;
-          width: 10%;
-          transition: all 0.3s
-      }
-      .nav-option:hover {
-          background-color: #dcdc99;
-      }
-
-      .nav-option * {
-          cursor: pointer;
-      }
-
-      .nav-option.scrolled {
-          padding: 0;
-          width: 7%;
-      }
-
-      #bannerButton {
-          background-color: #d34949;
-          height: 50px;
-          width: 150px;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-      }
-
-      #bannerButton * {
-          cursor: pointer;
-      }
-
-      #navTitle {
-          font-family: TitleFont, serif;
-          font-style: italic;
-          font-size: 0.9rem;
-          transition: all 0.3s;
-      }
-
-      #navTitle.scrolled {
-          font-size: 0.7rem;
-      }
-
-      .main-article {
-          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-      }
-
-      article img {
-          box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-      }
-  </style>
 </head>
-<header>
-  <nav id='nav' style='position: fixed'>
-    <div id='navContent' class='container d-flex ' style='height: 100%'>
+<header class='nav-header'>
 
-      <div class='col-4 d-flex align-items-center' style='height: 100%'>
-        <span id='navTitle'><em><strong>Die Oltner Saygex-Revolution</strong></em></span>
-      </div>
-
-      <div class='flex-spacer'></div>
-
-      <div class='nav-option'>
-        <span>Home</span>
-      </div>
-
-      <div class='nav-option'>
-        <span>Kontakt</span>
-      </div>
-
-      <div class='nav-option'>
-        <span>Über uns</span>
-      </div>
-
-    </div>
-  </nav>
-
+  <!-- Nav wird dynamisch durch JS geladen -->
 
   <div class="row justify-content-center text-center bg-light " id="headerBanner">
     <div id='bannerContent' class='row d-flex justify-content-center align-items-center my-5'>
-    <h1 id="mainTitle" class="">Die Saygex-Revolution im Norden von Olten</h1>
+    <h1 id="mainTitle" class="">Die Industrielle Revolution</h1>
     <div id='bannerButton'>
       Mehr erfahren
     </div>
@@ -167,7 +37,7 @@
     <article class="col-lg-12  my-5 d-flex justify-content-between">
       <div class="main-article col-lg-6 bg-light p-5">
         <section>
-          <h2>Die Anfänge</h2>
+          <h2>Voraussetzungen</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos excepturi fuga id modi
             nostrum pariatur
             repudiandae unde! Accusamus aliquid beatae debitis doloribus earum eos error iure laborum rerum
@@ -189,7 +59,7 @@
            class="col-lg-5">
       <div class="main-article col-lg-6 bg-light p-5">
         <section>
-          <h2>Kompetitiver Saygex</h2>
+          <h2>Technologischer Wandel</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos excepturi fuga id modi
             nostrum
             pariatur
@@ -205,6 +75,49 @@
         </section>
       </div>
     </article>
+    <article class="col-lg-12  my-5 d-flex justify-content-between">
+      <div class="main-article col-lg-6 bg-light p-5">
+        <section>
+          <h2>Englische Vorsprünge</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos excepturi fuga id modi
+            nostrum pariatur
+            repudiandae unde! Accusamus aliquid beatae debitis doloribus earum eos error iure laborum rerum
+            ullam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque, consequatur deleniti dicta
+            earum error
+            facilis labore minima non, officia possimus praesentium repellat reprehenderit sapiente totam ut
+            voluptates.
+            Est, quam?</p>
+          <a class="show-more-link"><em><strong>Mehr erfahren ...</strong></em></a>
+        </section>
+      </div>
+
+      <img src="https://company.sbb.ch/content/dam/internet/sharedimages/objekte/erfahrungsgruppe-bahnhof-olten.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg"
+           alt="" class="col-lg-5">
+    </article>
+    <article class="col-lg-12 my-5 d-flex justify-content-between">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bahnhof_Olten-20140514.jpg" alt=""
+           class="col-lg-5">
+      <div class="main-article col-lg-6 bg-light p-5">
+        <section>
+          <h2>Die Rolle der Schweiz</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eos excepturi fuga id modi
+            nostrum
+            pariatur
+            repudiandae unde! Accusamus aliquid beatae debitis doloribus earum eos error iure laborum rerum
+            ullam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque, consequatur deleniti dicta
+            earum
+            error
+            facilis labore minima non, officia possimus praesentium repellat reprehenderit sapiente totam ut
+            voluptates.
+            Est, quam?</p>
+          <a class="show-more-link"><em><strong>Mehr erfahren ...</strong></em></a>
+        </section>
+      </div>
+    </article>
+
+
 
   </div>
   <div class="row-lg-12 bg-light d-flex flex-column justify-content-center">
