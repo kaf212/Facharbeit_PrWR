@@ -1,16 +1,16 @@
 # Facharbeit_PrWR
 Themen:
 - Voraussetzungen
-    Bevölkerungswachstum in England
-    Einhegung & Agrarrevolution
+    - Bevölkerungswachstum in England
+    - Einhegung & Agrarrevolution
 - Technologischer Wandel
-    Dampfmaschine
-    Rolle der Textilindustrie
-    Schrittmacherindustrien
+    - Dampfmaschine
+    - Rolle der Textilindustrie
+    - Schrittmacherindustrien
 - Pionierrolle Engands
 - Wirtschaftstheorie & -ethik
-    Wirtschaftsliberalismus
+    - Wirtschaftsliberalismus
 - Industrialisierung in der Schweiz
 - Soziale Frage
-    Kinderarbeit
-    (Marxismus)
+    - Kinderarbeit
+    - (Marxismus)
