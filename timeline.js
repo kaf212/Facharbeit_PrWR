@@ -1,5 +1,7 @@
 
 
+
+
 function renderTimeLine() {
     const yearElements = Array.from(document.getElementById("timeLineList").children)
     const timeLine = document.getElementById("timeLine")
@@ -61,4 +63,44 @@ function renderTimeLine() {
 }
 
 renderTimeLine()
+
 window.addEventListener("resize", renderTimeLine)
+
+/*
+function getSizeCategory() {
+    const viewportWidth = window.innerWidth;
+
+    if (viewportWidth < 770) {
+        return 'xs';
+    } else if (viewportWidth >= 770 && viewportWidth < 990) {
+        return 'sm';
+    } else if (viewportWidth >= 990 && viewportWidth < 1200) {
+        return 'md';
+    } else if (viewportWidth >= 1200 && viewportWidth < 1400) {
+        return 'lg';
+    } else {
+        return 'xl';
+    }
+}
+
+ */
+
+/*
+let currentSize = getSizeCategory();
+window.addEventListener('resize', function() {
+    // Get the current size category
+    const newSize = getSizeCategory();
+
+    // Compare current size with the previous size
+    if (newSize !== currentSize) {
+        // Size category has changed, do something
+        console.log(`Switched from ${currentSize} to ${newSize}`);
+        renderTimeLine()
+
+        // Update the current size for the next comparison
+        currentSize = newSize;
+    }
+});
+
+ */
+
