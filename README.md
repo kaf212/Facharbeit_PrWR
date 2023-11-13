@@ -7,10 +7,13 @@ Themen:
     - Dampfmaschine
     - Rolle der Textilindustrie
     - Schrittmacherindustrien
-- Pionierrolle Engands
 - Wirtschaftstheorie & -ethik
     - Wirtschaftsliberalismus
-- Industrialisierung in der Schweiz
 - Soziale Frage
+    - Sozalgesetzgebung
+    - Entwicklungen
+- Industrialisierung in der Schweiz
+    - Allgemein
     - Kinderarbeit
-    - (Marxismus)
+    - Sozialgesetzgebung
+        - Eidg. Fabrikgesetz
