@@ -1,8 +1,8 @@
 
-
-
-
 function renderTimeLine() {
+    /*
+    Wird ausgeführt, wenn die gr
+     */
     const yearElements = Array.from(document.getElementById("timeLineList").children)
     const timeLine = document.getElementById("timeLine")
     const startYear = Number(yearElements[0].innerText) // erstes Jahr des Zeitstrahls
