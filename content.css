@@ -34,6 +34,7 @@
     flex-direction: column;
     height: 50px;
     font-size: 1vw;
+    transition: all 1s;
 }
 
 .timeline-img {
@@ -52,6 +53,8 @@
     flex-direction: column;
     align-self: flex-end;
     position: relative;
+    transition: all 1s;
+
 }
 
 .timeline-tooltip {
@@ -63,5 +66,5 @@
     transform: translateY(-125%);
     padding: 10px;
     border-radius: 7px;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
