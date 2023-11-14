@@ -37,12 +37,31 @@
 }
 
 .timeline-img {
-    height: 5vw;
+    width: 100px;
     aspect-ratio: 16/9;
+    align-self: flex-end;
 
 }
 
 #timeLineImages {
     display: flex;
+}
 
+.timeline-img-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    position: relative;
+}
+
+.timeline-tooltip {
+    font-size: 0.7rem;
+    position: absolute;
+    background-color: #333333;
+    color: white;
+    align-self: center;
+    transform: translateY(-125%);
+    padding: 10px;
+    border-radius: 7px;
+    transition: all 0.5s;
 }

@@ -11,6 +11,7 @@ function renderTimeLine() {
     console.log(`total time on timeline (${startYear} - ${endYear}) =   ${timeLineDuration}`)
 
     const imgElements = Array.from(document.getElementById("timeLineImages").children)
+    console.log(imgElements)
 
     let totalElementWidth = 0 // Summierte Breite aller HTML-Element auf dem Strahl
     let elemWidth = undefined
@@ -65,6 +66,15 @@ function renderTimeLine() {
 renderTimeLine()
 
 window.addEventListener("resize", renderTimeLine)
+
+Array.from(document.getElementsByClassName("timeline-img")).forEach(elem => {
+    elem.addEventListener("mouseover", event => {
+        event.currentTarget.previousElementSibling.classList.remove("hidden")
+    })
+    elem.addEventListener("mouseout", event => {
+        event.currentTarget.previousElementSibling.classList.add("hidden")
+    })
+})
 
 /*
 function getSizeCategory() {
