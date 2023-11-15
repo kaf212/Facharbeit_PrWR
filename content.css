@@ -12,7 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10% 0 10% 0;
+    margin: 10% 0 5% 0;
 }
 
 #timeLine {
@@ -67,4 +67,41 @@
     padding: 10px;
     border-radius: 7px;
     transition: all 0.3s;
+}
+
+#wikiContent {
+    background-color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#chapter1Overview {
+}
+
+#capitalismImg {
+    height: 300px;
+}
+
+#populationGrowthImg {
+    height: 180px;
+}
+
+#agricultureImg {
+    height: 250px;
+}
+
+.chapter-1-img {
+
+}
+
+.chapter-1-images {
+    height: 100%;
+}
+
+.chapter-1-titles {
+    max-width: 100%;
+}
+
+.chapter-1-div {
+    height: 100%;
+    background-color: rgba(255,0,0,0.5);
 }
