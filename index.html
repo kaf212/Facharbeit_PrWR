@@ -146,6 +146,7 @@
   </div>
 </main>
 
+<footer class='footer row bg-dark d-flex flex-column justify-content-center'></footer>
 
 <script> // Quelle: https://www.w3schools.com/js/js_graphics_chartjs.asp
 // code for graph
@@ -172,28 +173,6 @@ new Chart("myChart", {
 });
 </script>
 
-<script>
-    // code for navbar scroll animation
-    window.addEventListener("scroll", function () {
-        const navbar = document.getElementById('nav');
-        const navbarOptions = Array.from(document.getElementsByClassName("nav-option"))
-        const navbarTitle = document.getElementById("navTitle")
-        if (window.scrollY > 100) {
-            navbar.classList.add("scrolled");
-            navbarTitle.classList.add("scrolled")
-
-            for (const opt of navbarOptions) {
-                opt.classList.add("scrolled")
-            }
-        } else {
-            navbar.classList.remove("scrolled");
-            navbarTitle.classList.remove("scrolled")
-            for (const opt of navbarOptions) {
-                opt.classList.remove("scrolled")
-            }
-        }
-    });
-</script>
 
 </body>
 </html>

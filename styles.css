@@ -42,6 +42,7 @@ body {
     background-color: #425cc2;
     transition: all 0.3s;
     color: white;
+    z-index: 1;
 }
 #navTitle {
     text-decoration: none;
@@ -139,4 +140,13 @@ article img {
 .hidden {
     visibility: hidden;
     opacity: 0;
+}
+
+footer {
+    color: white;
+    height: 100px;
+}
+
+.footer-link {
+    color: white;
 }
