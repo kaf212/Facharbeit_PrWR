@@ -43,7 +43,10 @@ body {
     transition: all 0.3s;
     color: white;
 }
-
+#navTitle {
+    text-decoration: none;
+    color: white;
+}
 
 #navTopSpacer {
     height: 80px; /* = Höhe von Nav-Element */
