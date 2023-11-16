@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'TitleFont';
-    src: url('Agraham.otf') format('opentype');
+    src: url('media/Agraham.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
@@ -18,7 +18,7 @@ body {
 
 #headerBanner {
     /* alternative: https://www.infosperber.ch/wp-content/uploads/2017/10/child_laborerjpg.jpg */
-    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('kinderarbeit_banner_edited.png');
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('media/kinderarbeit_banner_edited.png');
 
     background-size: cover;
     height: 400px;

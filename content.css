@@ -74,8 +74,6 @@
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-#chapter1Overview {
-}
 
 #capitalismImg {
     height: 300px;
@@ -89,21 +87,19 @@
     height: 250px;
 }
 
-.chapter-1-img {
+.fig-1-img {
     transition: all 0.3s ease;
 }
 
-.chapter-1-img:hover {
+.fig-1-img:hover {
     transform: scale(1.1);
 }
 
-.chapter-1-images {
+.fig-1-images {
     height: 100%;
 }
 
-.chapter-1-titles {
+.fig-1-titles {
     max-width: 100%;
 }
 
-.chapter-1-div {
-}
