@@ -150,3 +150,8 @@ footer {
 .footer-link {
     color: white;
 }
+
+figcaption {
+    font-style: italic;
+    color: gray;
+}
