@@ -155,3 +155,13 @@ figcaption {
     font-style: italic;
     color: gray;
 }
+
+p a {
+    font-style: italic;
+    color: #4f43d8;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

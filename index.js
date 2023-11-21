@@ -9,7 +9,7 @@ function loadNavElements() {
 }
 
 function loadFooter() {
-    document.getElementsByClassName("footer")[0].innerHTML = "<div><div class='d-flex justify-content-center'><a href='' class='footer-link px-3'>Quellenverzeichnis</a><a href='https://github.com/kaf212/Facharbeit_PrWR' class='footer-link px-3'>GitHub</a></div><div class='d-flex justify-content-center mt-2'>&copy; Jan Atzgerstorfer</div></div>\n"
+    document.getElementsByClassName("footer")[0].innerHTML = "<div><div class='d-flex justify-content-center'><a href='' class='footer-link px-3'>Quellenverzeichnis</a><a href='https://github.com/kaf212/Facharbeit_PrWR' class='footer-link px-3'>GitHub</a></div><div class='d-flex justify-content-center mt-2'>&copy; 2023 | Jan Atzgerstorfer | Luca Schönenberger | Nico Studer | Raul Meili</div></div>\n"
 
 }
 
@@ -36,3 +36,29 @@ window.addEventListener("scroll", function () {
         }
     }
 });
+
+
+function initializeImageHyperlinks() {
+    /*
+    Iteriert über alle HTML-Elemente mit der Klasse "img-link" und setzt einen hyperlink zu dem
+    Element data-target-element Attribut.
+    Der Sinn hinter der Funktion ist, dass beim scrollen, die Navbar den Titel des Kapitels nicht
+    verdeckt, was beim default Verhalten eines Anchors geschehen würde.
+    Deshalb wird window.scrollTo und nicht window.location verwendet.
+     */
+    Array.from(document.getElementsByClassName("img-link")).forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetElement = document.getElementById(this.getAttribute('data-target-element'));
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 60, // Abstand zwischen dem Kapitel und dem oberen Bildschirmrand
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+initializeImageHyperlinks()
