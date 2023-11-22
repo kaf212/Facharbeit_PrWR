@@ -19,7 +19,7 @@ body {
 #headerBanner {
     /* alternative: https://www.infosperber.ch/wp-content/uploads/2017/10/child_laborerjpg.jpg */
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('media/kinderarbeit_banner_edited.png');
-
+    background-attachment: fixed;
     background-size: cover;
     height: 400px;
 }
@@ -164,4 +164,12 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+blockquote {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    /*color: #4e72fa;*/
+
 }
