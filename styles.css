@@ -7,6 +7,7 @@
 
 body {
     background-color: #f1f0ee;
+    overflow-x: hidden; /* Horizontale Scrollbar verstecken */
 }
 
 #mainTitle {
@@ -19,9 +20,9 @@ body {
 #headerBanner {
     /* alternative: https://www.infosperber.ch/wp-content/uploads/2017/10/child_laborerjpg.jpg */
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('media/kinderarbeit_banner_edited.png');
-
+    background-attachment: fixed;
     background-size: cover;
-    height: 400px;
+    height: 80vh;
 }
 
 .show-more-link {
@@ -149,4 +150,27 @@ footer {
 
 .footer-link {
     color: white;
+}
+
+figcaption {
+    font-style: italic;
+    color: gray;
+}
+
+p a {
+    font-style: italic;
+    color: #4f43d8;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    /*color: #4e72fa;*/
+
 }

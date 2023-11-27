@@ -103,3 +103,16 @@
     max-width: 100%;
 }
 
+.fig-1-text {
+    transition: all 2s;
+    color: #4f43d8;
+
+}
+
+.fig-1-text.animated {
+}
+
+.fig-1-text-container {
+    z-index: 1;
+}
+
