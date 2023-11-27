@@ -7,6 +7,7 @@
 
 body {
     background-color: #f1f0ee;
+    overflow-x: hidden; /* Horizontale Scrollbar verstecken */
 }
 
 #mainTitle {
@@ -21,7 +22,7 @@ body {
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('media/kinderarbeit_banner_edited.png');
     background-attachment: fixed;
     background-size: cover;
-    height: 400px;
+    height: 80vh;
 }
 
 .show-more-link {
