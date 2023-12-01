@@ -10,3 +10,5 @@ Bevölkerungsgrafik Bild: https://chart-studio.plotly.com/~LexiHamilton/75/popul
 Bevölkerungswachstum: https://www.who.int/news-room/spotlight/history-of-vaccination/a-brief-history-of-vaccination
 
 Adam Smith Bild: https://s.wsj.net/public/resources/images/BN-LP223_noquoa_GR_20151207162951.jpg
+
+Kind an Maschine Bild: https://th.bing.com/th/id/OIP.HQVeeq-TBIe-lvjr5EusPgHaF6?rs=1&pid=ImgDetMain
