@@ -1,7 +1,7 @@
 Zu Beginn des 19. Jahrhunderts wurde die erste Fabrikspinnerei in die Schweiz gebracht.
 Diese wurden mit Dampf- und Wasserkraft angetrieben. Ein Fabrikspinner produzierte ca. so viel Baumwolle
 wie 200 Heimarbeiter, also ein enormer Fortschritt. Nach 1830 entwickelte sich auch die mechanische Weberei,
-jedoch um einiges langsamer. Die Anspruchsvollen Stöffe werden nämlich noch lange von den Heimarbeitern gewoben.
+jedoch um einiges langsamer. Die anspruchsvollen Stoffe werden nämlich noch lange von den Heimarbeitern gewoben.
 Bis zur Jahrundermitte war die Zahl der neu geschaffenen Arbeitsplätze in den Fabriken geringer als die Zahl
 der in der Heimarbeit verolrenen Arbeitsplätze. Was natürlich ein Problem war. Dies war der Fall weil sich die Unternehmer
 hauptsächlich auf die Herstellung hochwertiger Produkt konzentrierten und nicht auf die Arbeiter. Obwohl es nicht einmal
@@ -9,3 +9,8 @@ genügend Arbeitsstellen gab wurden sie auch noch schlecht bezahlt, der Durchsch
 Konkurrenzland Grossbritannien.
 In der zweiten Jahrhunderhälfte passierte eine grosse Steigerung im Export von Luxusuhren, vorallem in Genf und im Jura.
 Die anzahl der Beschäftigten in der Uhrenindustrie stieg von 9000 auf 23000 Personen.
+
+Weil oft Maschinen kaputt gingen musste man sich eine Lösung dafür überlegen. So kam es dazu, dass mit der Zeit viel mehr Leute
+verstanden, wie diese Maschinen überhaupt funktionieren. Deswegen gründete Alfred Escher 1954 die ETH (Eidgenössische Technologische Hochschule).
+Es wurde herausgefunden, dass Farbe auch aus künstlichen Stoffen gewonnen werden kann, dies führte dann um 1880 zu der
+Chemischen Industrie.
