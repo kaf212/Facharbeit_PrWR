@@ -21,31 +21,50 @@
 
 </header>
 <body>
+<div class='site-content my-5' >
+  <main class="container p-5" id='contactContent'>
+    <h1 class='5'>Kontaktieren Sie uns!</h1>
+    <form action='mailto:jan.atzgerstorfer@student.ksh.ch' class='mt-4' method='post'>
 
-<main class="container">
-  <h1>Kontaktieren Sie uns!</h1>
-  <form action=''>
+      <label for='formSubject'>Betreff</label><br>
+      <select name='formSubject' id='formSubject'>
+        <option value='' disabled selected>Bitte auswählen ...</option>
+        <option value='Feedback'>Feedback</option>
+        <option value='Vorschlag'>Vorschlag</option>
+        <option value='Anfrage'>Anfrage</option>
+        <option value='Fehler'>Fehler melden</option>
+        <option value='Bug'>Bug Report</option>
+      </select><br>
 
-    <div class=''>
-      <input type='checkbox' name='' id='formAnonymity'>
-      <label for='formAnonymity'>Ich möchte anonym bleiben</label>
-    </div>
+      <label for='formText'>Nachricht</label>
+      <textarea name='' id='formText' cols='30' rows='3' class='col-12'></textarea>
 
-    <div class='row d-flex'>
-      <div class='col-6'>
-    <label for='formFn'>Vorname</label><br>
-    <input type='text' id='formFn' class='col-12'>
+      <div class=''>
+        <input type='checkbox' name='' id='formAnonymity'>
+        <label for='formAnonymity'>Ich möchte anonym bleiben</label>
       </div>
-      <div class='col-6'>
-    <label for='formLn'>Nachname</label><br>
-    <input type='text' id='formLn' class='col-12'>
-      </div>
-    </div>
-    <label for='formEmail'>E-Mail</label>
-    <input type='email' id='formEmail' class='col-12'>
-  </form>
 
-</main>
+      <div class='row d-flex'>
+        <div class='col-6'>
+          <label for='formFn'>Vorname</label><br>
+          <input type='text' id='formFn' class='col-12' required>
+        </div>
+        <div class='col-6'>
+          <label for='formLn'>Nachname</label><br>
+          <input type='text' id='formLn' class='col-12' required>
+        </div>
+      </div>
+      <label for='formEmail'>E-Mail</label>
+      <input type='email' id='formEmail' class='col-12' required>
+
+      <div class='mt-5'>
+
+      </div>
+      <input type='submit'>
+    </form>
+
+  </main>
+</div>
 
 <footer class='footer row bg-dark d-flex flex-column justify-content-center'></footer>
 
