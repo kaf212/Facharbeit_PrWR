@@ -24,10 +24,10 @@
 <div class='site-content my-5' >
   <main class="container p-5" id='contactContent'>
     <h1 class='5'>Kontaktieren Sie uns!</h1>
-    <form action='mailto:jan.atzgerstorfer@student.ksh.ch' class='mt-4' method='post'>
+    <form action='' class='mt-4' method='post' id='contactForm'>
 
       <label for='formSubject'>Betreff</label><br>
-      <select name='formSubject' id='formSubject'>
+      <select name="subject" id='formSubject'>
         <option value='' disabled selected>Bitte auswählen ...</option>
         <option value='Feedback'>Feedback</option>
         <option value='Vorschlag'>Vorschlag</option>
@@ -37,25 +37,25 @@
       </select><br>
 
       <label for='formText'>Nachricht</label>
-      <textarea name='' id='formText' cols='30' rows='3' class='col-12'></textarea>
+      <textarea name='message' id='formText' cols='30' rows='3' class='col-12'></textarea>
 
       <div class=''>
-        <input type='checkbox' name='' id='formAnonymity'>
-        <label for='formAnonymity'>Ich möchte anonym bleiben</label>
+        <input name='anonymous' type='checkbox'  id='formAnonymity'>
+        <label for='formAnonymity' >Ich möchte anonym bleiben</label>
       </div>
 
       <div class='row d-flex'>
         <div class='col-6'>
           <label for='formFn'>Vorname</label><br>
-          <input type='text' id='formFn' class='col-12' required>
+          <input name='firstName' type='text' id='formFn' class='col-12' required>
         </div>
         <div class='col-6'>
           <label for='formLn'>Nachname</label><br>
-          <input type='text' id='formLn' class='col-12' required>
+          <input name='lastName' type='text' id='formLn' class='col-12' required>
         </div>
       </div>
       <label for='formEmail'>E-Mail</label>
-      <input type='email' id='formEmail' class='col-12' required>
+      <input name='email' type='email' id='formEmail' class='col-12' required>
 
       <div class='mt-5'>
 
