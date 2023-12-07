@@ -21,27 +21,36 @@
 
 </header>
 <body>
-<div class='site-content my-5' >
+<div class='site-content my-5'>
   <main class="container p-5" id='contactContent'>
     <h1 class='5'>Kontaktieren Sie uns!</h1>
     <form action='' class='mt-4' method='post' id='contactForm'>
-
-      <label for='formSubject'>Betreff</label><br>
-      <select name="subject" id='formSubject'>
-        <option value='' disabled selected>Bitte auswählen ...</option>
-        <option value='Feedback'>Feedback</option>
-        <option value='Vorschlag'>Vorschlag</option>
-        <option value='Anfrage'>Anfrage</option>
-        <option value='Fehler'>Fehler melden</option>
-        <option value='Bug'>Bug Report</option>
-      </select><br>
+      <div class='d-flex'>
+        <div>
+          <label for='formSubject'>Betreff</label><br>
+          <select name="subject" id='formSubject'>
+            <option value='' disabled selected>Bitte auswählen ...</option>
+            <option value='Feedback'>Feedback</option>
+            <option value='Vorschlag'>Vorschlag</option>
+            <option value='Anfrage'>Anfrage</option>
+            <option value='Fehler'>Fehler melden</option>
+          </select><br>
+        </div>
+        <div class='ms-5 hidden' id='errorDescription'>
+          <span>Wo haben wir einen Fehler gemacht?</span><br>
+          <input type='radio' name='errorDescription' id='errorDescriptionRadio1' value='Inhalt' required>
+          <label for='errorDescriptionRadio1'>Inhalt</label><br>
+          <input type='radio' name='errorDescription' id='errorDescriptionRadio2' value='Programm' required>
+          <label for='errorDescriptionRadio2'>Programm</label>
+        </div>
+      </div>
 
       <label for='formText'>Nachricht</label>
-      <textarea name='message' id='formText' cols='30' rows='3' class='col-12'></textarea>
+      <textarea name='message' id='formText' cols='30' rows='3' class='col-12' required></textarea>
 
       <div class=''>
-        <input name='anonymous' type='checkbox'  id='formAnonymity'>
-        <label for='formAnonymity' >Ich möchte anonym bleiben</label>
+        <input name='anonymous' type='checkbox' id='formAnonymity'>
+        <label for='formAnonymity'>Ich möchte anonym bleiben</label>
       </div>
 
       <div class='row d-flex'>

@@ -13,7 +13,18 @@ document.getElementById("formAnonymity").addEventListener("click", (event)=>{
 
 })
 
+// fügt die Option für die Fehlerbeschreibung im Formular zu, wenn "Fehler" als Grund angewählt wird.
+document.getElementById("formSubject").addEventListener("change", event => {
+    if (event.currentTarget.value === "Fehler") {
+        document.getElementById("errorDescription").classList.remove("hidden")
+    }
+    else {
+        document.getElementById("errorDescription").classList.add("hidden")
+    }
+})
 
+
+// Handler für den Submit vom Kontaktformular
 document.getElementById("contactForm").addEventListener("submit", (event)=> {
     event.preventDefault()
     const form = event.currentTarget
@@ -34,7 +45,11 @@ document.getElementById("contactForm").addEventListener("submit", (event)=> {
         body += `Anonym:\tJa`
 
     }
+    if (data.get("subject") === "Fehler") {
+        body += `\nBeschreibung:\t${data.get("errorDescription")}\n`
+    }
     body += `\nNachricht:\n${data.get("message")}\n\n`
+
     window.location.href = 'mailto:' + targetMail + '?subject=' + encodeURIComponent(mailSubject) + '&body=' + encodeURIComponent(body)
 
 
