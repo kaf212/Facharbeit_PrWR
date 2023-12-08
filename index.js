@@ -9,7 +9,7 @@ function loadNavElements() {
 }
 
 function loadFooter() {
-    document.getElementsByClassName("footer")[0].innerHTML = "<div><div class='d-flex justify-content-center'><a href='' class='footer-link px-3'>Quellenverzeichnis</a><a href='https://github.com/kaf212/Facharbeit_PrWR' class='footer-link px-3'>GitHub</a></div><div class='d-flex justify-content-center mt-2'>&copy; 2023 | Jan Atzgerstorfer | Luca Schönenberger | Nico Studer | Raul Meili</div></div>\n"
+    document.getElementsByClassName("footer")[0].innerHTML = "<div><div class='d-flex justify-content-center'><a href='./sources.html' class='footer-link px-3'>Quellenverzeichnis</a><a href='https://github.com/kaf212/Facharbeit_PrWR' class='footer-link px-3'>GitHub</a></div><div class='d-flex justify-content-center mt-2'>&copy; 2023 | Jan Atzgerstorfer | Luca Schönenberger | Nico Studer | Raul Meili</div></div>\n"
 
 }
 
