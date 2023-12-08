@@ -1,0 +1,12 @@
+<p> Mit der immer stärker voranschreitenden Industrialisierung veränderten sich die Bedingungen der
+          einstigen Selbstversorger und Heimarbeiter drastisch. 1855 betrug die durchschnittliche Arbeitszeit für einen
+          Fabrikarbeiter 14 Stunden. Zusätzlich mussten die meisten vom Land stammenden Arbeiter zu Fuss einen mehrstündigen
+          Arbeitsweg zurücklegen. <br>
+          Die Arbeitsbedingungen waren keineswegs besser. In den Fabrikhallen herrschten hohe Temperaturen und konstanter Lärm.
+          Die Arbeit, die die Arbeiter verrichten mussten, war nicht nur eintönig und ermüdend, sondern auch gefährlich.</p>
+        <br>
+        Die Totalrevidierung der Bundesverfassung 1874 ermöglichte es dem Bund, die Vertragsfreiheit einzuschränken und somit
+        erstmals Schutzbestimmungen für die Arbeiter zu erlassen. Drei Jahre später wurde das erste eidgenössische Fabrikgesetz
+        angenommen. Es wurde eine maximale Arbeitszeit von elf Stunde pro Tag eingeführt, Nacht- und Sonntagsarbeit wurden verbote,
+        Fabrikbetreiber wurden Haftbar für Arbeitsunfälle und die Kinderarbeit für Kinder & Jugendliche bis 14 Jahre wurde
+        verboten.
