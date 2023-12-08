@@ -15,11 +15,19 @@ document.getElementById("formAnonymity").addEventListener("click", (event)=>{
 
 // fügt die Option für die Fehlerbeschreibung im Formular zu, wenn "Fehler" als Grund angewählt wird.
 document.getElementById("formSubject").addEventListener("change", event => {
+    const radios = document.getElementById("errorDescription")
+    const radio1 = document.getElementById("errorDescriptionRadio1")
+    const radio2 = document.getElementById("errorDescriptionRadio2")
     if (event.currentTarget.value === "Fehler") {
-        document.getElementById("errorDescription").classList.remove("hidden")
+        radios.classList.remove("hidden")
+        radio1.setAttribute("required", "required")
+        radio2.setAttribute("required", "required")
+
     }
     else {
-        document.getElementById("errorDescription").classList.add("hidden")
+        radios.classList.add("hidden")
+        radio1.removeAttribute("required")
+        radio2.removeAttribute("required")
     }
 })
 
