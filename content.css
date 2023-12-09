@@ -44,6 +44,10 @@
 
 }
 
+.timeline-img-container:hover {
+    z-index: 100;
+}
+
 #timeLineImages {
     display: flex;
 }
