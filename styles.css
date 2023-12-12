@@ -175,6 +175,11 @@ blockquote {
 
 }
 
+.quote-description {
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
 .kinderarbeit-text {
     display: flex;
     flex-direction: column;
