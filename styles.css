@@ -5,6 +5,14 @@
     font-style: italic;
 }
 
+@media (max-width: 599px) { /* Kleine Bildschirme */
+    #headerBanner {
+        height: 400px;
+
+    }
+
+}
+
 body {
     background-color: #f1f0ee;
     overflow-x: hidden; /* Horizontale Scrollbar verstecken */
@@ -22,8 +30,9 @@ body {
     background: radial-gradient(circle at center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url('media/kinderarbeit_banner_edited.png');
     background-attachment: fixed;
     background-size: cover;
-    height: 80vh;
+    height: 500px;
 }
+
 
 .show-more-link {
     cursor: pointer;
