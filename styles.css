@@ -196,7 +196,7 @@ blockquote {
     padding: 3%;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     width: 80%;
-    margin: 0 auto 0 auto;
+    margin: 50px auto 50px auto;
     font-size: 1.1rem;
     color: white;
 }
