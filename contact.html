@@ -30,12 +30,13 @@
       <div class='d-flex'>
         <div>
           <label for='formSubject'>Betreff</label><br>
-          <select name="subject" id='formSubject'>
+          <select name="subject" id='formSubject' required>
             <option value='' disabled selected>Bitte auswählen ...</option>
             <option value='Feedback'>Feedback</option>
             <option value='Vorschlag'>Vorschlag</option>
             <option value='Anfrage'>Anfrage</option>
             <option value='Fehler'>Fehler melden</option>
+            <option value='Sonstiges'>Sonstiges</option>
           </select><br>
         </div>
 
@@ -77,31 +78,34 @@
 
       </div>
 
-      <label for='formText'>Nachricht</label>
+      <label for='formText' class='mt-4'>Nachricht</label>
       <textarea name='message' id='formText' cols='30' rows='3' class='col-12' required></textarea>
 
-      <div class=''>
+      <div class='mt-4'>
         <input name='anonymous' type='checkbox' id='formAnonymity'>
         <label for='formAnonymity'>Ich möchte anonym bleiben</label>
       </div>
 
-      <div class='row d-flex'>
+      <div class='row d-flex mt-4'>
         <div class='col-6'>
           <label for='formFn'>Vorname</label><br>
           <input name='firstName' type='text' id='formFn' class='col-12' required>
         </div>
-        <div class='col-6'>
+        <div class='col-6 '>
           <label for='formLn'>Nachname</label><br>
           <input name='lastName' type='text' id='formLn' class='col-12' required>
         </div>
       </div>
+      <div class='mt-4'>
       <label for='formEmail'>E-Mail</label>
       <input name='email' type='email' id='formEmail' class='col-12' required>
+      </div>
 
-      <div class='mt-5'>
+      <div class='mt-4'>
 
       </div>
-      <input type='submit'>
+      <input type='reset' id='resetButton' class='form-button'>
+      <input type='submit' id='submitButton' class='form-button ms-3'>
     </form>
 
   </main>
