@@ -30,48 +30,82 @@
       <div class='d-flex'>
         <div>
           <label for='formSubject'>Betreff</label><br>
-          <select name="subject" id='formSubject'>
+          <select name="subject" id='formSubject' required>
             <option value='' disabled selected>Bitte auswählen ...</option>
             <option value='Feedback'>Feedback</option>
             <option value='Vorschlag'>Vorschlag</option>
             <option value='Anfrage'>Anfrage</option>
             <option value='Fehler'>Fehler melden</option>
+            <option value='Sonstiges'>Sonstiges</option>
           </select><br>
         </div>
-        <div class='ms-5 hidden' id='errorDescription'>
+
+        <div class='ms-5 dynamic-form-element' id='errorDescription' style='display: none;'>
           <span>Wo haben wir einen Fehler gemacht?</span><br>
-          <input type='radio' name='errorDescription' id='errorDescriptionRadio1' value='Inhalt'>
-          <label for='errorDescriptionRadio1'>Inhalt</label><br>
-          <input type='radio' name='errorDescription' id='errorDescriptionRadio2' value='Programm'>
-          <label for='errorDescriptionRadio2'>Programm</label>
+          <input type='radio' name='errorDescription' id='errorDescriptionRadio1' value='Fehler im Inhalt'>
+          <label for='errorDescriptionRadio1'>Im Inhalt</label><br>
+          <input type='radio' name='errorDescription' id='errorDescriptionRadio2' value='Fehler im Programm'>
+          <label for='errorDescriptionRadio2'>Im Programm</label>
         </div>
+
+        <div class='ms-5 dynamic-form-element' id='requestDescription' style='display: none;'>
+          <span>Womit können wir helfen?</span><br>
+          <input type='radio' name='requestDescription' id='requestDescriptionRadio1' value='Ich habe eine Frage bezüglich den Quellen'>
+          <label for='requestDescriptionRadio1'>Ich habe eine Frage bezüglich den Quellen</label><br>
+          <input type='radio' name='requestDescription' id='requestDescriptionRadio2' value='Ich möchte detailliertere Informationen über ein Thema'>
+          <label for='requestDescriptionRadio2'>Ich möchte detailliertere Informationen über ein Thema</label><br>
+          <input type='radio' name='requestDescription' id='requestDescriptionRadio3' value='Sonstiges'>
+          <label for='requestDescriptionRadio3'>Sonstiges</label>
+        </div>
+
+        <div class='ms-5 dynamic-form-element' id='feedbackDescription' style='display: none;'>
+          <span>Was möchten Sie uns mitteilen?</span><br>
+          <input type='radio' name='feedbackDescription' id='feedbackDescriptionRadio1' value='Lob'>
+          <label for='feedbackDescriptionRadio1'>Lob</label><br>
+          <input type='radio' name='feedbackDescription' id='feedbackDescriptionRadio2' value='Kritik'>
+          <label for='feedbackDescriptionRadio2'>Kritik</label>
+        </div>
+
+        <div class='ms-5 dynamic-form-element' id='proposalDescription' style='display: none;'>
+          <span>Was möchten Sie uns vorschlagen?</span><br>
+          <input type='radio' name='proposalDescription' id='proposalDescriptionRadio1' value='Fehler im Inhalt'>
+          <label for='proposalDescriptionRadio1'>Erweiterung eines bestehenden Themas</label><br>
+          <input type='radio' name='proposalDescription' id='proposalDescriptionRadio2' value='Fehler im Programm'>
+          <label for='proposalDescriptionRadio2'>Integration eines neuen Themas</label><br>
+          <input type='radio' name='proposalDescription' id='proposalDescriptionRadio3' value='Sonstiges'>
+          <label for='proposalDescriptionRadio3'>Sonstiges</label>
+        </div>
+
       </div>
 
-      <label for='formText'>Nachricht</label>
+      <label for='formText' class='mt-4'>Nachricht</label>
       <textarea name='message' id='formText' cols='30' rows='3' class='col-12' required></textarea>
 
-      <div class=''>
+      <div class='mt-4'>
         <input name='anonymous' type='checkbox' id='formAnonymity'>
         <label for='formAnonymity'>Ich möchte anonym bleiben</label>
       </div>
 
-      <div class='row d-flex'>
+      <div class='row d-flex mt-4'>
         <div class='col-6'>
           <label for='formFn'>Vorname</label><br>
           <input name='firstName' type='text' id='formFn' class='col-12' required>
         </div>
-        <div class='col-6'>
+        <div class='col-6 '>
           <label for='formLn'>Nachname</label><br>
           <input name='lastName' type='text' id='formLn' class='col-12' required>
         </div>
       </div>
+      <div class='mt-4'>
       <label for='formEmail'>E-Mail</label>
       <input name='email' type='email' id='formEmail' class='col-12' required>
+      </div>
 
-      <div class='mt-5'>
+      <div class='mt-4'>
 
       </div>
-      <input type='submit'>
+      <input type='reset' id='resetButton' class='form-button'>
+      <input type='submit' id='submitButton' class='form-button ms-3'>
     </form>
 
   </main>
