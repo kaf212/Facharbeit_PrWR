@@ -15,20 +15,43 @@ document.getElementById("formAnonymity").addEventListener("click", (event)=>{
 
 // fügt die Option für die Fehlerbeschreibung im Formular zu, wenn "Fehler" als Grund angewählt wird.
 document.getElementById("formSubject").addEventListener("change", event => {
-    const radios = document.getElementById("errorDescription")
-    const radio1 = document.getElementById("errorDescriptionRadio1")
-    const radio2 = document.getElementById("errorDescriptionRadio2")
-    if (event.currentTarget.value === "Fehler") {
-        radios.classList.remove("hidden")
-        radio1.setAttribute("required", "required")
-        radio2.setAttribute("required", "required")
+
+    // Zuerst alle dynamischen Formular-Elemente deaktivieren
+    Array.from(document.getElementsByClassName("dynamic-form-element")).forEach(elem => {
+
+        elem.style.display = "none"
+
+        Array.from(elem.getElementsByTagName("input")).forEach(input => {
+            input.removeAttribute("required")
+        })
+    })
+
+    let radios = undefined
+    let elemId = undefined
+    // Betreff der Nachricht auslesen und korrektes dynamisches Element aktivieren.
+    switch (event.currentTarget.value) {
+        case "Fehler":
+            elemId = "errorDescription"
+            radios = Array.from(document.getElementById("errorDescription").getElementsByTagName("input"))
+            break
+
+        case "Anfrage":
+            elemId = "requestDescription"
+            radios = radios = Array.from(document.getElementById("errorDescription").getElementsByTagName("input"))
+            break
 
     }
-    else {
-        radios.classList.add("hidden")
-        radio1.removeAttribute("required")
-        radio2.removeAttribute("required")
+
+    document.getElementById(elemId).style.display = "block"
+
+    if (radios !== undefined) {
+        radios.forEach(radio => {
+            radio.setAttribute("required", "required")
+        })
     }
+
+
+
 })
 
 

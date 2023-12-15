@@ -38,13 +38,23 @@
             <option value='Fehler'>Fehler melden</option>
           </select><br>
         </div>
-        <div class='ms-5 hidden' id='errorDescription'>
+
+        <div class='ms-5 dynamic-form-element' id='errorDescription' style='display: none;'>
           <span>Wo haben wir einen Fehler gemacht?</span><br>
           <input type='radio' name='errorDescription' id='errorDescriptionRadio1' value='Inhalt'>
           <label for='errorDescriptionRadio1'>Inhalt</label><br>
           <input type='radio' name='errorDescription' id='errorDescriptionRadio2' value='Programm'>
           <label for='errorDescriptionRadio2'>Programm</label>
         </div>
+
+        <div class='ms-5 dynamic-form-element' id='requestDescription' style='display: none;'>
+          <span>Womit können wir helfen?</span><br>
+          <input type='radio' name='requestDescription' id='requestDescriptionRadio1' value='Inhalt'>
+          <label for='requestDescriptionRadio1'>Inhalt</label><br>
+          <input type='radio' name='requestDescription' id='requestDescriptionRadio2' value='Programm'>
+          <label for='requestDescriptionRadio2'>Programm</label>
+        </div>
+
       </div>
 
       <label for='formText'>Nachricht</label>
