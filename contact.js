@@ -26,23 +26,30 @@ document.getElementById("formSubject").addEventListener("change", event => {
         })
     })
 
-    let radios = undefined
     let elemId = undefined
     // Betreff der Nachricht auslesen und korrektes dynamisches Element aktivieren.
     switch (event.currentTarget.value) {
         case "Fehler":
             elemId = "errorDescription"
-            radios = Array.from(document.getElementById("errorDescription").getElementsByTagName("input"))
             break
 
         case "Anfrage":
             elemId = "requestDescription"
-            radios = radios = Array.from(document.getElementById("errorDescription").getElementsByTagName("input"))
+            break
+
+        case "Feedback":
+            elemId = "feedbackDescription"
+            break
+
+        case "Vorschlag":
+            elemId = "proposalDescription"
             break
 
     }
 
     document.getElementById(elemId).style.display = "block"
+
+    const radios = Array.from(document.getElementById(elemId).getElementsByTagName("input"))
 
     if (radios !== undefined) {
         radios.forEach(radio => {
@@ -79,6 +86,17 @@ document.getElementById("contactForm").addEventListener("submit", (event)=> {
     if (data.get("subject") === "Fehler") {
         body += `\nBeschreibung:\t${data.get("errorDescription")}\n`
     }
+    if (data.get("subject") === "Anfrage") {
+        body += `\nBeschreibung:\t${data.get("requestDescription")}\n`
+    }
+    if (data.get("subject") === "Feedback") {
+        body += `\nBeschreibung:\t${data.get("feedbackDescription")}\n`
+    }
+    if (data.get("subject") === "Vorschlag") {
+        body += `\nBeschreibung:\t${data.get("proposalDescription")}\n`
+    }
+
+
     body += `\nNachricht:\n${data.get("message")}\n\n`
 
     window.location.href = 'mailto:' + targetMail + '?subject=' + encodeURIComponent(mailSubject) + '&body=' + encodeURIComponent(body)
